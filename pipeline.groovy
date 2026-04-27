@@ -17,7 +17,7 @@ pipeline {
 
         stage('docker login') {
             steps {
-                sh 'echo "dckr_pat_hQ4D0TYvEe-Tb4zGR-I9_1ZZCkM"|docker login -u siddhant295 --password-stdin'
+                sh 'echo "docker_token"|docker login -u siddhant295 --password-stdin'
             }
         }
 
